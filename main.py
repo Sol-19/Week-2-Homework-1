@@ -23,6 +23,10 @@ def create_task(task: TaskIn):
     return new_task
 
 
+@app.get("/tasks")
+def list_tasks():
+    return tasks
+
 
 
 
